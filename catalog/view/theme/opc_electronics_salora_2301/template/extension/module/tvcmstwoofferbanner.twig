@@ -1,0 +1,104 @@
+{#
+	{% if status_title %}
+		{{ bannarlist.tvcmstwoofferbannersub_img_title_1 }}
+		{{ bannarlist.tvcmstwoofferbannersub_img_title_2 }}
+	{% endif %}
+	{% if status_short_description %}
+		{{ bannarlist.tvcmstwoofferbannersub_img_subtitle_1 }}
+		{{ bannarlist.tvcmstwoofferbannersub_img_subtitle_2 }}
+	{% endif %}
+	{% if status_description %}
+		{{ bannarlist.tvcmstwoofferbannersub_img_description_1 }}
+		{{ bannarlist.tvcmstwoofferbannersub_img_description_2 }}
+	{% endif %}
+	{% if status_btncaption %}
+		{{ bannarlist.tvcmstwoofferbannersub_img_btn_1 }}
+		{{ bannarlist.tvcmstwoofferbannersub_img_btn_2 }}
+		{% endif %}
+	{% if status_link %}
+		{{ bannarlist.tvcmstwoofferbannersub_link_1 }}
+		{{ bannarlist.tvcmstwoofferbannersub_link_2 }}
+	{% endif %}
+
+	{{ bannarlist.tvcmstwoofferbannersub_image_1 }}
+	{{ bannarlist.tvcmstwoofferbannersub_img_align_1 }}
+	{{ bannarlist.tvcmstwoofferbannersub_image_2 }}
+	{{ bannarlist.tvcmstwoofferbannersub_img_align_2 }}
+#}
+
+<div class="ttvcmsofferbanners-two container-fluid">
+	<div class="ttvbanner ttvbanner-content container">
+		<div class="ttvtwobanner-all-img">
+			<div class="ttvbanner-wrapper ttvtwo-banner-first col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+				<div class="ttvbanner1">
+					<a href="{{ bannarlist.tvcmstwoofferbannersub_link_1 }}">
+						<div class='ttvbanner-hover-wrapper'>
+							<div class="ttvbranner-hover-info-box"></div>
+							<div class="ttvbanner-hover"></div>
+							<div class="{{ bannarlist.tvcmstwoofferbannersub_img_align_1 }}">
+								<div class="ttvtwobanner-content">
+									<div class="ttvtwobanner-content-wrapper">
+										{% if status_title %}
+											<div class="ttvtwobanner-title-text-1 ttvtwobanner-title-text">
+												{{ bannarlist.tvcmstwoofferbannersub_img_title_1 }}
+											</div>
+										{% endif %}
+										{% if status_short_description %}
+											<div class="ttvtwobanner-subtitle-1 ttvtwobanner-subtitle-text">
+												{{ bannarlist.tvcmstwoofferbannersub_img_subtitle_1 }}
+											</div>
+										{% endif %}
+										{% if status_btncaption %}
+											<div class="ttvtwobanner-button-1 ttvtwobanner-button ttv-innerpage-button">
+												{{ bannarlist.tvcmstwoofferbannersub_img_btn_1 }}
+											</div>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+							<div class="ttvtwobanner-image-wrapper">
+								<img src="{{ bannarlist.tvcmstwoofferbannersub_image_1 }}" class="img-responsive" alt="" />
+								<div class="ttvbanner-hover1"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="ttvbanner-wrapper ttvtwobanner-second col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+				<div class="ttvbanner2">
+					<a href="{{ bannarlist.tvcmstwoofferbannersub_link_2 }}">
+						<div class='ttvbanner-hover-wrapper'>
+							<div class="ttvbranner-hover-info-box"></div>
+							<div class="ttvbanner-hover"></div>
+							<div class="{{ bannarlist.tvcmstwoofferbannersub_img_align_2 }}">
+								<div class="ttvtwobanner-content">
+									<div class="ttvtwobanner-content-wrapper">
+										{% if status_title %}
+											<div class="ttvtwobanner-title-text-2 ttvtwobanner-title-text">
+												{{ bannarlist.tvcmstwoofferbannersub_img_title_2 }}
+											</div>
+										{% endif %}
+										{% if status_short_description %}
+											<div class="ttvtwobanner-subtitle-2 ttvtwobanner-subtitle-text">
+												{{ bannarlist.tvcmstwoofferbannersub_img_subtitle_2 }}
+											</div>
+										{% endif %}
+										{% if status_btncaption %}
+											<div class="ttvtwobanner-button-2 ttvtwobanner-button ttv-innerpage-button">
+												{{ bannarlist.tvcmstwoofferbannersub_img_btn_2 }}
+											</div>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+							<div class="ttvtwobanner-image-wrapper">
+								<img src="{{ bannarlist.tvcmstwoofferbannersub_image_2}}" class="img-responsive" alt="" />
+								<div class="ttvbanner-hover1"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
